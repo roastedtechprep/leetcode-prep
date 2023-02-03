@@ -35,6 +35,7 @@ Second processed is `9 - 7`, we will now check for existence of `2` in the map. 
 - ****************************************Space Complexity:**************************************** O(n) - we are using the map to store the pairs
 
 # Code
+## Using JavaScript
 
 ```jsx
 /**
@@ -58,6 +59,7 @@ var twoSum = function(nums, target) {
 
 // Leetcode Runtime: 96 ms
 ```
+## Using TypeScript
 
 ```tsx
 function twoSum(nums: number[], target: number): number[] {
@@ -80,6 +82,7 @@ function twoSum(nums: number[], target: number): number[] {
 # Alternative Solution
 
 Similar approach, however if we use object instead of map, the runtime is sort of faster
+## Using JavaScript
 ```jsx
 /**
  * @param {number[]} nums
