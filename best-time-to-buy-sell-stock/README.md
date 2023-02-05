@@ -94,3 +94,24 @@ var maxProfit = function(prices) {
 | Memory | 52 MB | Beats | 17.95% |
 
 # Alternative Solution using TypeScript
+
+```tsx
+function maxProfit(prices: number[]): number {
+    let left: number = 0;
+    let maxProfit: number = 0;
+
+    for (let right: number = 1; right < prices.length; right++) {
+        if (prices[left] < prices[right]) {
+            let profit: number = prices[right] - prices[left];
+            maxProfit = Math.max(maxProfit, profit);
+        } else (
+            left = right
+        )
+    }
+    return maxProfit;
+}
+```
+
+| Runtime | 91 ms | Beats | 81.92% |
+| --- | --- | --- | --- |
+| Memory | 51.9 MB | Beats | 63.91% |
